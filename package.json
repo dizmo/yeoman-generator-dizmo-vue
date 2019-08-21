@@ -1,0 +1,49 @@
+{
+  "author": {
+    "email": "hasan.karahan@blackhan.com",
+    "name": "Hasan Karahan",
+    "url": "https://github.com/hsk81"
+  },
+  "contributors": [
+    {
+      "email": "hkarahan@dizmo.com",
+      "name": "Hasan Karahan"
+    }
+  ],
+  "dependencies": {
+    "@dizmo/generator-dizmo": "^9.1.10",
+    "chalk": "^2.4.2",
+    "lodash": "^4.17.15",
+    "rimraf": "^3.0.0",
+    "shelljs": "^0.8.3",
+    "yeoman-generator": "^4.0.1",
+    "yosay": "^2.0.2"
+  },
+  "description": "@dizmo/dizmo-vue: a dizmo generator for vue projects",
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-test": "^2.0.0"
+  },
+  "files": [
+    "generators/app"
+  ],
+  "homepage": "https://git.dizmo.com/dizmo/yeoman-generator-dizmo-vue",
+  "keywords": [
+    "yeoman-generator",
+    "dizmo",
+    "vue",
+    "generator",
+    "dizmoGen"
+  ],
+  "license": "ISC",
+  "name": "@dizmo/generator-dizmo-vue",
+  "repository": {
+    "type": "git",
+    "url": "git@git.dizmo.com:dizmo/yeoman-generator-dizmo-vue.git"
+  },
+  "scripts": {
+    "test": "npx mocha test --recursive"
+  },
+  "version": "0.0.0"
+}
