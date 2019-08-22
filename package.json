@@ -28,7 +28,7 @@
   "files": [
     "generators/app"
   ],
-  "homepage": "https://git.dizmo.com/dizmo/yeoman-generator-dizmo-vue",
+  "homepage": "https://github.com/dizmo/yeoman-generator-dizmo-vue",
   "keywords": [
     "yeoman-generator",
     "dizmo",
@@ -40,7 +40,7 @@
   "name": "@dizmo/generator-dizmo-vue",
   "repository": {
     "type": "git",
-    "url": "git@git.dizmo.com:dizmo/yeoman-generator-dizmo-vue.git"
+    "url": "git@github.com:dizmo/yeoman-generator-dizmo-vue.git"
   },
   "scripts": {
     "test": "npx mocha test --recursive"
