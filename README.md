@@ -17,7 +17,7 @@ npm install -g yo
 npm install -g @dizmo/generator-dizmo-vue
 ```
 
-**Note:** On most operating systems the `-g` option (shortcut for `--global`) requires super user (administrator) rights. Due to security considerations however, avoid using such a privileged account and see the [FAQ] to be able to install global packages as a *regular* user.
+**Note:** On most operating systems the `-g` option (shortcut for `--global`) requires super user (administrator) rights. Due to security considerations however, avoid using such a privileged account and see the (external) [FAQ] to be able to install global packages as a *regular* user.
 
 [FAQ]: https://github.com/dizmo/yeoman-generator-dizmo#i-cannot-install-yo-globally-with-npm-install--g
 
@@ -44,6 +44,12 @@ Then, within an existing project:
 ```sh
 yo @dizmo/dizmo-vue --upgrade
 ```
+
+## FAQ
+
+### Is ES6 supported?
+
+While ES6 is fully supported in regular `src/**/*.js` scripts, in Vue components (`src/**/*.vue`) only ES5 can be used. This limitation is due to the [`vueify`](https://github.com/vuejs/vueify) plugin of the `browserify` bundler. However, in the Vue components it is possible to *import* ES6 scripts.
 
 ## Further Information
 
