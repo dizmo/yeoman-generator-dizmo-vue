@@ -11,23 +11,14 @@ module.exports = {
             use: 'vue-loader'
         }, {
             test: /\.css$/,
-            use: [
-              'vue-style-loader',
-              'css-loader'
-            ]
+            use: ['vue-style-loader', 'css-loader']
         }, {
             test: /\.js$/,
-            exclude: [
-                /\.min\.js$/, /\.umd\.js$/
-            ],
+            exclude: [/\.(min|umd)\.js$/],
             use: {
                 loader: 'babel-loader',
                 options: {
-                    presets: [
-                        '@babel/preset-env'
-                    ],
-                    plugins: [
-                    ],
+                    presets: ['@babel/preset-env'],
                     cacheDirectory: true
                 }
             }
