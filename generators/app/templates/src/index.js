@@ -8,9 +8,8 @@ document.addEventListener('dizmoready', () => {
     window.VUE = new Vue({
         el: '#front', render: h => h(App)
     });
-    document.getElementById('done').onclick = () => {
-        dizmo.showFront();
-    };
+    const done = document.getElementById('done');
+    done.onclick = () => dizmo.showFront();
 }, {
     once: true
 });

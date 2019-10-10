@@ -5,13 +5,10 @@
 </template>
 
 <script>
-module.exports = {
-    name: 'App',
-    data: function () {
-        return {
-            message: '<%= dizmoName %>'
-        };
-    }
+export default {
+    name: 'App', data: () => ({
+        message: '<%= dizmoName %>'
+    })
 };
 </script>
 

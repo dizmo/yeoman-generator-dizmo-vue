@@ -15,7 +15,6 @@ describe('generator-dizmo-vue:app', function () {
                 'assets/Icon-dark.svg',
                 'assets/Icon.svg',
                 'assets/Preview.png',
-                'babel.config.js',
                 '.eslintrc.json',
                 'gulp',
                 'gulp/miscellanea',
@@ -84,6 +83,7 @@ describe('generator-dizmo-vue:app', function () {
                 'src/index.js',
                 'src/style',
                 'src/style/style.scss',
+                'webpack.config.js',
                 '.yo-rc.json',
             ]);
             assert.jsonFileContent('package.json', {
@@ -116,22 +116,18 @@ describe('generator-dizmo-vue:app', function () {
                     },
                     'store': {
                         'host': 'https://store-api.dizmo.com'
-                    },
-                    'build': {
-                        'lint': true,
-                        'minify': false
                     }
                 },
                 'dependencies': {
-                    '@babel/polyfill': '^7.4.4',
+                    '@babel/polyfill': '^7.6.0',
                     'vue': '^2.6.10'
                 },
                 'devDependencies': {
-                    '@babel/core': '^7.5.5',
-                    '@babel/preset-env': '^7.5.5',
+                    '@babel/core': '^7.6.3',
+                    '@babel/preset-env': '^7.6.3',
                     'ansi-colors': '^4.1.1',
-                    'babelify': '^10.0.0',
-                    'browserify': '^16.5.0',
+                    'babel-loader': '^8.0.6',
+                    'css-loader': '^3.2.0',
                     'fancy-log': '^1.3.3',
                     'gulp': '^4.0.2',
                     'gulp-copy': '^4.0.1',
@@ -141,16 +137,19 @@ describe('generator-dizmo-vue:app', function () {
                     'gulp-rename': '^1.4.0',
                     'gulp-sass': '^4.0.2',
                     'gulp-sourcemaps': '^2.6.5',
-                    'gulp-uglify': '^3.0.2',
                     'gulp-ver': '^0.1.0',
-                    'gulp-zip': '^5.0.0',
-                    'lodash': '^4.17.15',
+                    'gulp-zip': '^5.0.1',
                     'rimraf': '^3.0.0',
-                    'vinyl-buffer': '^1.0.1',
-                    'vinyl-source-stream': '^2.0.0',
-                    'vueify': '^9.4.1',
-                    'watchify': '^3.11.1',
-                    'xtend': '^4.0.2'
+                    'vue-loader': '^15.7.1',
+                    'vue-style-loader': '^4.1.2',
+                    'vue-template-compiler': '^2.6.10',
+                    'webpack': '^4.41.0',
+                    'webpack-stream': '^5.2.1'
+                },
+                'optionalDependencies': {
+                    'pump': '^3.0.0',
+                    'terser-webpack-plugin': '^2.1.2',
+                    'webpack-obfuscator': '^0.18.3'
                 },
                 'license': 'ISC',
                 'private': true,
@@ -166,10 +165,6 @@ describe('generator-dizmo-vue:app', function () {
                     'test': 'exit 0',
                     'upload': 'node ./gulp/scripts/upload.js',
                     'watch': 'node ./gulp/scripts/watch.js'
-                },
-                'optionalDependencies': {
-                    'javascript-obfuscator': '^0.18.1',
-                    'pump': '^3.0.0'
                 }
             });
         });

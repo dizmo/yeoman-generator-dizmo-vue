@@ -38,20 +38,29 @@ const SubGenerator = (args, opts) => class extends Generator {
                 this.templatePath('gulp/'),
                 this.destinationPath('gulp/')
             );
-            this.fs.copy(
-                this.templatePath('babel.config.js'),
-                this.destinationPath('babel.config.js')
+            this.fs.copyTpl(
+                this.templatePath('webpack.config.js'),
+                this.destinationPath('webpack.config.js'), {
+                    dizmoName: pkg.name
+                }
             );
         }
         if (!upgrade || upgrade) {
-            pkg.devDependencies = sort(
-                lodash.assign(pkg.devDependencies, {
-                    'vueify': '^9.4.1'
-                })
-            );
             pkg.dependencies = sort(
                 lodash.assign(pkg.dependencies, {
                     'vue': '^2.6.10'
+                })
+            );
+            pkg.devDependencies = sort(
+                lodash.assign(pkg.devDependencies, {
+                    'vue-loader': '^15.7.1',
+                    'vue-style-loader': '^4.1.2',
+                    'vue-template-compiler': '^2.6.10'
+                })
+            );
+            pkg.devDependencies = sort(
+                lodash.assign(pkg.devDependencies, {
+                    'css-loader': '^3.2.0'
                 })
             );
             this.fs.writeJSON(
