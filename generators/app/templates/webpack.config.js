@@ -28,7 +28,7 @@ module.exports = {
         new VueLoaderPlugin()
     ],
     output: {
-        path: resolve(__dirname, 'build', 'VueDizmo'),
+        path: resolve(__dirname, 'build', '<%= dizmoName %>'),
         filename: 'index.js'
     },
     mode: 'none'
