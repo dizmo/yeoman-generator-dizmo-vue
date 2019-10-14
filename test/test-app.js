@@ -123,7 +123,7 @@ describe('generator-dizmo-vue:app', function () {
                     'vue': '^2.6.10'
                 },
                 'devDependencies': {
-                    '@babel/core': '^7.6.3',
+                    '@babel/core': '^7.6.4',
                     '@babel/preset-env': '^7.6.3',
                     'ansi-colors': '^4.1.1',
                     'babel-loader': '^8.0.6',
@@ -143,12 +143,12 @@ describe('generator-dizmo-vue:app', function () {
                     'vue-loader': '^15.7.1',
                     'vue-style-loader': '^4.1.2',
                     'vue-template-compiler': '^2.6.10',
-                    'webpack': '^4.41.0',
+                    'webpack': '^4.41.1',
                     'webpack-stream': '^5.2.1'
                 },
                 'optionalDependencies': {
                     'pump': '^3.0.0',
-                    'terser-webpack-plugin': '^2.1.2',
+                    'terser-webpack-plugin': '^2.1.3',
                     'webpack-obfuscator': '^0.18.3'
                 },
                 'license': 'ISC',
