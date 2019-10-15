@@ -1,4 +1,5 @@
 import App from './components/App.vue';
+import './style/style.scss';
 import Vue from 'vue';
 
 window.showBack = dizmo.showBack;

@@ -10,8 +10,8 @@ module.exports = {
             test: /\.vue$/i,
             use: 'vue-loader'
         }, {
-            test: /\.css$/i,
-            use: ['vue-style-loader', 'css-loader']
+            test: /\.(css|s[ac]ss)$/i,
+            use: ['vue-style-loader', 'css-loader', 'sass-loader']
         }, {
             test: /\.js$/,
             exclude: /\.(min|umd)\.js$/i,

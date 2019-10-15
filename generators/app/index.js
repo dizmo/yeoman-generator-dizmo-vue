@@ -27,9 +27,8 @@ const SubGenerator = (args, opts) => class extends Generator {
         this.destinationRoot(process.cwd());
     }
     writing() {
-        const pkg = this.fs.readJSON(
-            this.destinationPath('package.json')
-        );
+        const pkg_path = this.destinationPath('package.json');
+        const pkg = this.fs.readJSON(pkg_path);
         const upgrade = Boolean(
             this.options.upgrade && fs.existsSync('package.json')
         );
@@ -58,14 +57,19 @@ const SubGenerator = (args, opts) => class extends Generator {
                     'vue-template-compiler': '^2.6.10'
                 })
             );
+            this.fs.writeJSON(pkg_path, pkg, null, 2);
+        }
+        if (!upgrade || upgrade) {
+            delete pkg.devDependencies['gulp-sass'];
+            delete pkg.devDependencies['gulp-sourcemaps'];
             pkg.devDependencies = sort(
                 lodash.assign(pkg.devDependencies, {
-                    'css-loader': '^3.2.0'
+                    'css-loader': '^3.2.0',
+                    'node-sass': '^4.12.0',
+                    'sass-loader': '^8.0.0'
                 })
             );
-            this.fs.writeJSON(
-                this.destinationPath('package.json'), pkg, null, 2
-            );
+            this.fs.writeJSON(pkg_path, pkg, null, 2);
         }
         if (!upgrade) {
             this.fs.copy(
@@ -92,6 +96,9 @@ const SubGenerator = (args, opts) => class extends Generator {
         this.conflicter.force = this.options.force || upgrade;
     }
     end() {
+        rimraf.sync(
+            this.destinationPath('gulp/tasks/build/styles')
+        );
         rimraf.sync(
             this.destinationPath('assets/locales')
         );
