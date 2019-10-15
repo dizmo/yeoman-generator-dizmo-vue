@@ -7,14 +7,14 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.vue$/,
+            test: /\.vue$/i,
             use: 'vue-loader'
         }, {
-            test: /\.css$/,
+            test: /\.css$/i,
             use: ['vue-style-loader', 'css-loader']
         }, {
             test: /\.js$/,
-            exclude: [/\.(min|umd)\.js$/],
+            exclude: /\.(min|umd)\.js$/i,
             use: {
                 loader: 'babel-loader',
                 options: {

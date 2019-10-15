@@ -143,7 +143,7 @@ describe('generator-dizmo-vue:app', function () {
                     'vue-loader': '^15.7.1',
                     'vue-style-loader': '^4.1.2',
                     'vue-template-compiler': '^2.6.10',
-                    'webpack': '^4.41.1',
+                    'webpack': '^4.41.2',
                     'webpack-stream': '^5.2.1'
                 },
                 'optionalDependencies': {
