@@ -27,10 +27,11 @@ const SubGenerator = (args, opts) => class extends Generator {
         this.destinationRoot(process.cwd());
     }
     writing() {
-        const pkg_path = this.destinationPath('package.json');
-        const pkg = this.fs.readJSON(pkg_path);
         const upgrade = Boolean(
             this.options.upgrade && fs.existsSync('package.json')
+        );
+        const pkg = this.fs.readJSON(
+            this.destinationPath('package.json')
         );
         if (!upgrade || upgrade) {
             this.fs.copy(
@@ -57,11 +58,8 @@ const SubGenerator = (args, opts) => class extends Generator {
                     'vue-template-compiler': '^2.6.10'
                 })
             );
-            this.fs.writeJSON(pkg_path, pkg, null, 2);
         }
         if (!upgrade || upgrade) {
-            delete pkg.devDependencies['gulp-sass'];
-            delete pkg.devDependencies['gulp-sourcemaps'];
             pkg.devDependencies = sort(
                 lodash.assign(pkg.devDependencies, {
                     'css-loader': '^3.2.0',
@@ -69,7 +67,8 @@ const SubGenerator = (args, opts) => class extends Generator {
                     'sass-loader': '^8.0.0'
                 })
             );
-            this.fs.writeJSON(pkg_path, pkg, null, 2);
+            delete pkg.devDependencies['gulp-sass'];
+            delete pkg.devDependencies['gulp-sourcemaps'];
         }
         if (!upgrade) {
             this.fs.copy(
@@ -93,6 +92,9 @@ const SubGenerator = (args, opts) => class extends Generator {
                 this.destinationPath('.eslintrc.json')
             );
         }
+        this.fs.writeJSON(
+            this.destinationPath('package.json'), pkg, null, 2
+        );
         this.conflicter.force = this.options.force || upgrade;
     }
     end() {
