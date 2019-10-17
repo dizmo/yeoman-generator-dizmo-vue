@@ -8,13 +8,15 @@ module.exports = {
     module: {
         rules: [{
             test: /\.vue$/i,
+            exclude: [/node_modules/i],
             use: 'vue-loader'
         }, {
             test: /\.(css|s[ac]ss)$/i,
+            exclude: [/node_modules/i],
             use: ['vue-style-loader', 'css-loader', 'sass-loader']
         }, {
             test: /\.js$/,
-            exclude: /\.(min|umd)\.js$/i,
+            exclude: [/node_modules/i, /\.(min|umd)\.js$/i],
             use: {
                 loader: 'babel-loader',
                 options: {
