@@ -48,23 +48,23 @@ const SubGenerator = (args, opts) => class extends Generator {
         if (!upgrade || upgrade) {
             pkg.dependencies = sort(
                 lodash.assign(pkg.dependencies, {
-                    'vue': '^2.6.10'
+                    'vue': '^2.6.11'
                 })
             );
             pkg.devDependencies = sort(
                 lodash.assign(pkg.devDependencies, {
-                    'vue-loader': '^15.7.1',
+                    'vue-loader': '^15.9.0',
                     'vue-style-loader': '^4.1.2',
-                    'vue-template-compiler': '^2.6.10'
+                    'vue-template-compiler': '^2.6.11'
                 })
             );
         }
         if (!upgrade || upgrade) {
             pkg.devDependencies = sort(
                 lodash.assign(pkg.devDependencies, {
-                    'css-loader': '^3.2.0',
-                    'node-sass': '^4.12.0',
-                    'sass-loader': '^8.0.0'
+                    'css-loader': '^3.4.2',
+                    'node-sass': '^4.13.1',
+                    'sass-loader': '^8.0.2'
                 })
             );
             delete pkg.devDependencies['gulp-sass'];

@@ -116,37 +116,37 @@ describe('generator-dizmo-vue:app', function () {
                     }
                 },
                 'dependencies': {
-                    '@babel/polyfill': '^7.6.0',
-                    'vue': '^2.6.10'
+                    '@babel/polyfill': '^7.8.3',
+                    'vue': '^2.6.11'
                 },
                 'devDependencies': {
-                    '@babel/core': '^7.6.4',
-                    '@babel/preset-env': '^7.6.3',
+                    '@babel/core': '^7.8.4',
+                    '@babel/preset-env': '^7.8.4',
                     'ansi-colors': '^4.1.1',
                     'babel-loader': '^8.0.6',
-                    'css-loader': '^3.2.0',
+                    'css-loader': '^3.4.2',
                     'fancy-log': '^1.3.3',
                     'gulp': '^4.0.2',
                     'gulp-copy': '^4.0.1',
                     'gulp-eslint': '^6.0.0',
                     'gulp-htmlmin': '^5.0.1',
                     'gulp-plist': '^0.1.0',
-                    'gulp-rename': '^1.4.0',
+                    'gulp-rename': '^2.0.0',
                     'gulp-ver': '^0.1.0',
                     'gulp-zip': '^5.0.1',
-                    'node-sass': '^4.12.0',
-                    'rimraf': '^3.0.0',
-                    'vue-loader': '^15.7.1',
+                    'node-sass': '^4.13.1',
+                    'rimraf': '^3.0.2',
+                    'vue-loader': '^15.9.0',
                     'vue-style-loader': '^4.1.2',
-                    'vue-template-compiler': '^2.6.10',
-                    'sass-loader': '^8.0.0',
-                    'webpack': '^4.41.2',
+                    'vue-template-compiler': '^2.6.11',
+                    'sass-loader': '^8.0.2',
+                    'webpack': '^4.41.6',
                     'webpack-stream': '^5.2.1'
                 },
                 'optionalDependencies': {
                     'pump': '^3.0.0',
-                    'terser-webpack-plugin': '^2.1.3',
-                    'webpack-obfuscator': '^0.18.3'
+                    'terser-webpack-plugin': '^2.3.5',
+                    'webpack-obfuscator': '^0.24.6'
                 },
                 'license': 'ISC',
                 'private': true,
