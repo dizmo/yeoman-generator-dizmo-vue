@@ -120,8 +120,8 @@ describe('generator-dizmo-vue:app', function () {
                     'vue': '^2.6.11'
                 },
                 'devDependencies': {
-                    '@babel/core': '^7.8.4',
-                    '@babel/preset-env': '^7.8.4',
+                    '@babel/core': '^7.8.6',
+                    '@babel/preset-env': '^7.8.6',
                     'ansi-colors': '^4.1.1',
                     'babel-loader': '^8.0.6',
                     'css-loader': '^3.4.2',
@@ -130,7 +130,7 @@ describe('generator-dizmo-vue:app', function () {
                     'gulp-copy': '^4.0.1',
                     'gulp-eslint': '^6.0.0',
                     'gulp-htmlmin': '^5.0.1',
-                    'gulp-plist': '^0.1.0',
+                    'gulp-plist': '^0.9.0',
                     'gulp-rename': '^2.0.0',
                     'gulp-ver': '^0.1.0',
                     'gulp-zip': '^5.0.1',
@@ -140,13 +140,13 @@ describe('generator-dizmo-vue:app', function () {
                     'vue-style-loader': '^4.1.2',
                     'vue-template-compiler': '^2.6.11',
                     'sass-loader': '^8.0.2',
-                    'webpack': '^4.41.6',
+                    'webpack': '^4.42.0',
                     'webpack-stream': '^5.2.1'
                 },
                 'optionalDependencies': {
                     'pump': '^3.0.0',
                     'terser-webpack-plugin': '^2.3.5',
-                    'webpack-obfuscator': '^0.24.6'
+                    'webpack-obfuscator': '^0.25.2'
                 },
                 'license': 'ISC',
                 'private': true,
