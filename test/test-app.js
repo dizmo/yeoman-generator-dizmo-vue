@@ -116,15 +116,15 @@ describe('generator-dizmo-vue:app', function () {
                     }
                 },
                 'dependencies': {
-                    '@babel/polyfill': '^7.8.3',
+                    '@babel/polyfill': '^7.8.7',
                     'vue': '^2.6.11'
                 },
                 'devDependencies': {
-                    '@babel/core': '^7.8.6',
-                    '@babel/preset-env': '^7.8.6',
+                    '@babel/core': '^7.9.0',
+                    '@babel/preset-env': '^7.9.5',
                     'ansi-colors': '^4.1.1',
-                    'babel-loader': '^8.0.6',
-                    'css-loader': '^3.4.2',
+                    'babel-loader': '^8.1.0',
+                    'css-loader': '^3.5.2',
                     'fancy-log': '^1.3.3',
                     'gulp': '^4.0.2',
                     'gulp-copy': '^4.0.1',
@@ -136,17 +136,17 @@ describe('generator-dizmo-vue:app', function () {
                     'gulp-zip': '^5.0.1',
                     'node-sass': '^4.13.1',
                     'rimraf': '^3.0.2',
-                    'vue-loader': '^15.9.0',
+                    'vue-loader': '^15.9.1',
                     'vue-style-loader': '^4.1.2',
                     'vue-template-compiler': '^2.6.11',
                     'sass-loader': '^8.0.2',
-                    'webpack': '^4.42.0',
+                    'webpack': '^4.42.1',
                     'webpack-stream': '^5.2.1'
                 },
                 'optionalDependencies': {
                     'pump': '^3.0.0',
                     'terser-webpack-plugin': '^2.3.5',
-                    'webpack-obfuscator': '^0.25.2'
+                    'webpack-obfuscator': '^0.27.4'
                 },
                 'license': 'ISC',
                 'private': true,

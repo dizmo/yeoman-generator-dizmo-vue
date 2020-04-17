@@ -55,4 +55,8 @@ While ES6 is fully supported in regular `src/**/*.js` scripts, in Vue components
 
 See the description of the main [@dizmo/generator-dizmo] package for a more exhaustive documentation.
 
+## Copyright
+
+ © [dizmo AG](http://dizmo.com/), Switzerland
+
 [@dizmo/generator-dizmo]: https://www.npmjs.com/package/@dizmo/generator-dizmo
