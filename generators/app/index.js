@@ -62,8 +62,8 @@ const SubGenerator = (args, opts) => class extends Generator {
         if (!upgrade || upgrade) {
             pkg.devDependencies = sort(
                 lodash.assign(pkg.devDependencies, {
-                    'css-loader': '^3.5.2',
-                    'node-sass': '^4.13.1',
+                    'css-loader': '^3.5.3',
+                    'node-sass': '^4.14.0',
                     'sass-loader': '^8.0.2'
                 })
             );
