@@ -44,6 +44,10 @@ const SubGenerator = (args, opts) => class extends Generator {
                     dizmoName: pkg.name
                 }
             );
+            this.fs.copy(
+                this.templatePath('jsdoc.json'),
+                this.destinationPath('jsdoc.json')
+            );
         }
         if (!upgrade || upgrade) {
             pkg.dependencies = sort(
@@ -56,6 +60,11 @@ const SubGenerator = (args, opts) => class extends Generator {
                     'vue-loader': '^15.9.2',
                     'vue-style-loader': '^4.1.2',
                     'vue-template-compiler': '^2.6.11'
+                })
+            );
+            pkg.optionalDependencies = sort(
+                lodash.assign(pkg.optionalDependencies, {
+                    'jsdoc-vuejs': '^3.0.8',
                 })
             );
         }

@@ -5,6 +5,12 @@
 </template>
 
 <script>
+/**
+ * @vue-prop {String} name=App
+ *  application name
+ * @vue-data {String} message=<%= dizmoName %>
+ *  front side message
+ */
 export default {
     name: 'App', data: () => ({
         message: '<%= dizmoName %>'

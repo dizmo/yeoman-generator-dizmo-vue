@@ -146,6 +146,7 @@ describe('generator-dizmo-vue:app', function () {
                     'closure-webpack-plugin': '^2.3.0',
                     'google-closure-compiler': '^20200504.0.0',
                     'jsdoc': '^3.6.4',
+                    'jsdoc-vuejs': '^3.0.8',
                     'minami': '^1.2.3',
                     'pump': '^3.0.0',
                     'webpack-obfuscator': '^0.28.1'
