@@ -24,7 +24,7 @@
 
 * Integrated generator tests with CI:
 
-    The Vue.js project generator is can now automatically be verified with `npm test`, which is also run by the https://travis-ci.org/ continuous integration service. The entire list of generated files is checked, plus the full content of `package.json`.
+    The Vue.js project generator is can now automatically be verified with `npm test`, which is also run by the https://travis-ci.com/ continuous integration service. The entire list of generated files is checked, plus the full content of `package.json`.
 
 [@dizmo/generator-dizmo]: https://github.com/dizmo/yeoman-generator-dizmo
 [@dizmo/generator-dizmo-vue]: https://git.dizmo.com/dizmo/yeoman-generator-dizmo-vue
