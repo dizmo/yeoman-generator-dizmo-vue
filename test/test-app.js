@@ -115,15 +115,16 @@ describe('generator-dizmo-vue:app', function () {
                     }
                 },
                 'dependencies': {
-                    '@babel/polyfill': '^7.10.4',
-                    'vue': '^2.6.11'
+                    '@babel/polyfill': '^7.12.1',
+                    'vue': '^2.6.12'
                 },
                 'devDependencies': {
-                    '@babel/core': '^7.11.1',
-                    '@babel/preset-env': '^7.11.0',
+                    '@babel/core': '^7.12.3',
+                    '@babel/preset-env': '^7.12.1',
                     'ansi-colors': '^4.1.1',
                     'babel-loader': '^8.1.0',
-                    'css-loader': '^4.2.1',
+                    'css-loader': '^5.0.0',
+                    'eslint': '^7.12.1',
                     'fancy-log': '^1.3.3',
                     'gulp': '^4.0.2',
                     'gulp-copy': '^4.0.1',
@@ -131,25 +132,26 @@ describe('generator-dizmo-vue:app', function () {
                     'gulp-htmlmin': '^5.0.1',
                     'gulp-plist': '^0.9.0',
                     'gulp-rename': '^2.0.0',
+                    'gulp-replace': '^1.0.0',
                     'gulp-ver': '^0.1.0',
                     'gulp-zip': '^5.0.2',
                     'node-sass': '^4.14.1',
                     'rimraf': '^3.0.2',
-                    'vue-loader': '^15.9.3',
+                    'sass-loader': '^10.0.4',
+                    'vue-loader': '^15.9.4',
                     'vue-style-loader': '^4.1.2',
-                    'vue-template-compiler': '^2.6.11',
-                    'sass-loader': '^9.0.3',
-                    'webpack': '^4.44.1',
-                    'webpack-stream': '^5.2.1'
+                    'vue-template-compiler': '^2.6.12',
+                    'webpack': '^5.3.0',
+                    'webpack-stream': '^6.1.0'
                 },
                 'optionalDependencies': {
                     'closure-webpack-plugin': '^2.3.0',
-                    'google-closure-compiler': '^20200719.0.0',
-                    'jsdoc': '^3.6.5',
-                    'jsdoc-vuejs': '^3.0.8',
+                    'google-closure-compiler': '^20201006.0.0',
+                    'jsdoc': '^3.6.6',
+                    'jsdoc-vuejs': '^3.0.9',
                     'minami': '^1.2.3',
                     'pump': '^3.0.0',
-                    'webpack-obfuscator': '^1.9.0'
+                    'webpack-obfuscator': '^3.0.0'
                 },
                 'license': 'ISC',
                 'private': true,
