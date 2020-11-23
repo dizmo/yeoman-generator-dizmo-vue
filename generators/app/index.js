@@ -57,7 +57,7 @@ const SubGenerator = (args, opts) => class extends Generator {
             );
             pkg.devDependencies = sort(
                 lodash.assign(pkg.devDependencies, {
-                    'vue-loader': '^15.9.4',
+                    'vue-loader': '^15.9.5',
                     'vue-style-loader': '^4.1.2',
                     'vue-template-compiler': '^2.6.12'
                 })
@@ -71,9 +71,9 @@ const SubGenerator = (args, opts) => class extends Generator {
         if (!upgrade || upgrade) {
             pkg.devDependencies = sort(
                 lodash.assign(pkg.devDependencies, {
-                    'css-loader': '^5.0.0',
-                    'node-sass': '^4.14.1',
-                    'sass-loader': '^10.0.4'
+                    'css-loader': '^5.0.1',
+                    'node-sass': '^5.0.0',
+                    'sass-loader': '^10.1.0'
                 })
             );
             delete pkg.devDependencies['gulp-sass'];

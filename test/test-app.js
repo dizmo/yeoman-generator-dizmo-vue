@@ -119,12 +119,12 @@ describe('generator-dizmo-vue:app', function () {
                     'vue': '^2.6.12'
                 },
                 'devDependencies': {
-                    '@babel/core': '^7.12.3',
-                    '@babel/preset-env': '^7.12.1',
+                    '@babel/core': '^7.12.7',
+                    '@babel/preset-env': '^7.12.7',
                     'ansi-colors': '^4.1.1',
-                    'babel-loader': '^8.1.0',
-                    'css-loader': '^5.0.0',
-                    'eslint': '^7.12.1',
+                    'babel-loader': '^8.2.1',
+                    'css-loader': '^5.0.1',
+                    'eslint': '^7.14.0',
                     'fancy-log': '^1.3.3',
                     'gulp': '^4.0.2',
                     'gulp-copy': '^4.0.1',
@@ -135,24 +135,24 @@ describe('generator-dizmo-vue:app', function () {
                     'gulp-replace': '^1.0.0',
                     'gulp-ver': '^0.1.0',
                     'gulp-zip': '^5.0.2',
-                    'node-sass': '^4.14.1',
+                    'node-sass': '^5.0.0',
                     'rimraf': '^3.0.2',
-                    'sass-loader': '^10.0.4',
-                    'vue-loader': '^15.9.4',
+                    'sass-loader': '^10.1.0',
+                    'vue-loader': '^15.9.5',
                     'vue-style-loader': '^4.1.2',
                     'vue-template-compiler': '^2.6.12',
-                    'webpack': '^5.3.0',
-                    'webpack-stream': '^6.1.0'
-                },
+                    'webpack': '^5.6.0',
+                    'webpack-stream': '^6.1.1'
+                  },
                 'optionalDependencies': {
                     'closure-webpack-plugin': '^2.3.0',
-                    'google-closure-compiler': '^20201006.0.0',
+                    'google-closure-compiler': '^20201102.0.1',
                     'jsdoc': '^3.6.6',
                     'jsdoc-vuejs': '^3.0.9',
                     'minami': '^1.2.3',
                     'pump': '^3.0.0',
-                    'webpack-obfuscator': '^3.0.0'
-                },
+                    'webpack-obfuscator': '^3.1.0'
+                  },
                 'license': 'ISC',
                 'private': true,
                 'repository': {
