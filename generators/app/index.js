@@ -69,15 +69,13 @@ const SubGenerator = (args, opts) => class extends Generator {
             );
         }
         if (!upgrade || upgrade) {
-            pkg.devDependencies = sort(
-                lodash.assign(pkg.devDependencies, {
-                    'css-loader': '^5.0.1',
-                    'node-sass': '^5.0.0',
-                    'sass-loader': '^10.1.0'
-                })
-            );
             delete pkg.devDependencies['gulp-sass'];
             delete pkg.devDependencies['gulp-sourcemaps'];
+        }
+        if (!upgrade || upgrade) {
+            const js = this.fs.read('src/index.js')
+                .replace(/style\/style.css/, 'styles/styles.css');
+            this.fs.write('src/index.js', js);
         }
         if (!upgrade) {
             this.fs.copy(

@@ -1,5 +1,6 @@
 const { VueLoaderPlugin } = require('vue-loader');
 const { resolve } = require('path');
+const webpack = require('webpack')
 
 module.exports = {
     entry: {
@@ -25,10 +26,13 @@ module.exports = {
         }]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(), new webpack.DefinePlugin({
+            'process.env': {}
+        })
     ],
     output: {
         path: resolve(__dirname, 'build', '<%= dizmoName %>'),
+        environment: { arrowFunction: false },
         filename: 'index.js'
     },
     mode: 'none'
