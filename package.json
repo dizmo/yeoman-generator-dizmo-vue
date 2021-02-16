@@ -11,7 +11,7 @@
     }
   ],
   "dependencies": {
-    "@dizmo/generator-dizmo": "^10.6.12",
+    "@dizmo/generator-dizmo": "^10.6.15",
     "chalk": "^4.1.0",
     "lodash": "^4.17.20",
     "rimraf": "^3.0.2",
@@ -21,7 +21,7 @@
   },
   "description": "@dizmo/dizmo-vue: a dizmo generator for Vue.js projects",
   "devDependencies": {
-    "mocha": "^8.2.1",
+    "mocha": "^8.3.0",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^4.0.0"
   },
