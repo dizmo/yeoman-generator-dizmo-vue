@@ -58,7 +58,6 @@ const SubGenerator = (args, opts) => class extends Generator {
             pkg.devDependencies = sort(
                 lodash.assign(pkg.devDependencies, {
                     'vue-loader': '^15.9.5',
-                    'vue-style-loader': '^4.1.2',
                     'vue-template-compiler': '^2.6.12'
                 })
             );

@@ -21,11 +21,15 @@ window.showFront = () => dizmo.showFront();
  * @function
  */
 const onDizmoReady = () => {
-    window.VUE = new Vue({
-        el: '#front', render: h => h(App)
+    dizmo.subscribeToAttribute('settings/framecolor', () => {
+        const front = document.getElementById('front');
+        front.style.color = dizmo.getAdaptiveColor();
     });
     const done = document.getElementById('done');
     done.onclick = () => dizmo.showFront();
+    window.VUE = new Vue({
+        el: '#front', render: h => h(App)
+    });
 };
 document.addEventListener('dizmoready', onDizmoReady, {
     once: true

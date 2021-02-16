@@ -12,7 +12,7 @@ module.exports = {
             use: 'vue-loader'
         }, {
             test: /\.(css|s[ac]ss)$/i,
-            use: ['vue-style-loader', 'css-loader', 'sass-loader']
+            use: ['style-loader', 'css-loader', 'sass-loader']
         }, {
             test: /\.js$/,
             exclude: [/node_modules/i, /\.(min|umd)\.js$/i],
