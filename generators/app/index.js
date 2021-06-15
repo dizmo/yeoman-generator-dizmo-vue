@@ -52,13 +52,13 @@ const SubGenerator = (args, opts) => (app) => class extends Generator {
         if (!upgrade || upgrade) {
             pkg.dependencies = sort(
                 lodash.assign(pkg.dependencies, {
-                    'vue': '^2.6.12'
+                    'vue': '^2.6.14'
                 })
             );
             pkg.devDependencies = sort(
                 lodash.assign(pkg.devDependencies, {
                     'vue-loader': '^15.9.7',
-                    'vue-template-compiler': '^2.6.12'
+                    'vue-template-compiler': '^2.6.14'
                 })
             );
             pkg.optionalDependencies = sort(
